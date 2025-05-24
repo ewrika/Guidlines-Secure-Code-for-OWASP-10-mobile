@@ -9,13 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(sections, id: \.header) { section in
+                    Section(header: Text(section.header)) {
+                            ForEach(section.items, id: \.self) { item in
+                                NavigationLink(destination: DetailView(title: item)) {
+                                    Text(item)
+                                }
+                            }
+                        }
+                }
+            }
+            .listStyle(.insetGrouped)
         }
-        .padding()
+    }
+}
+
+struct DetailView: View {
+    let title: String
+    var body: some View {
+        switch title {
+        case "UserDefaults":
+            UserDefaultsView()
+        case "KeyChain":
+            KeyChainView()
+        case "FaceID":
+            EmptyView()
+        default:
+            Text("Детали для \(title)")
+        }
     }
 }
 
