@@ -35,7 +35,9 @@ struct DetailView: View {
         case "KeyChain":
             KeyChainView()
         case "FaceID":
-            EmptyView()
+            FaceIDView()
+        case "Pincode":
+            PinCodeView()
         default:
             Text("Детали для \(title)")
         }
