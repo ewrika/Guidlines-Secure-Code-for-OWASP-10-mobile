@@ -38,6 +38,14 @@ struct DetailView: View {
             FaceIDView()
         case "Pincode":
             PinCodeView()
+        case "Race Conditions":
+            RaceConditionsView()
+        case "Design System":
+            DesignSystemView()
+        case "NSLock":
+            NSLockView()
+        case "GCD":
+            GCDView()
         default:
             Text("Детали для \(title)")
         }

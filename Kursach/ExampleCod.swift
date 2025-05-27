@@ -7,24 +7,7 @@
 
 import Foundation
 
-//var balance = 1200
-//
-//struct ATM {
-//    let tag: String
-//    func withdraw(value: Int) {
-//        print("\(self.tag): Проверка достаточного баланса")
-//        if balance > value {
-//            print("\(self.tag): Баланс достаточен, пожалуйста, подождите, пока обрабатывается снятие")
-//            // имитация длительного процесса
-//            Thread.sleep(forTimeInterval: Double.random(in: 0...2))
-//            balance -= value
-//            print("\(self.tag): Готово: \(value) снято")
-//            print("\(self.tag): Текущий баланс: \(balance)")
-//        } else {
-//            print("\(self.tag): Невозможно снять: недостаточный баланс")
-//        }
-//    }
-//}
+
 //
 //let queue = DispatchQueue(label: "WithdrawalQueue", attributes: .concurrent)
 //
