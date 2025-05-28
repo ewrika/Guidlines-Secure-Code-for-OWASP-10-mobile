@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "httpbin_cert.der",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
