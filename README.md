@@ -3,7 +3,7 @@
 ## Описание проекта
 Этот проект представляет собой демонстрационное iOS-приложение, разработанное на SwiftUI, которое исследует различные аспекты безопасности мобильных приложений. Проект служит образовательным целям и демонстрирует как правильные, так и неправильные практики безопасности в iOS-разработке.
 
-![Главный экран приложения](images/main_screen.jpeg)
+![Главный экран приложения](Kursach/images/main_screen.jpeg)
 
 ## Структура проекта
 Проект организован в следующие основные модули:
@@ -12,34 +12,34 @@
 - **UserDefaults** - Демонстрация небезопасного хранения данных
 - **KeyChain** - Примеры работы с KeyChain для безопасного хранения данных
 
-![Пример работы с UserDefaults](images/userdefaults_demo.jpeg)
-![Пример работы с KeyChain](images/keychain_demo.jpeg)
+![Пример работы с UserDefaults](Kursach/images/userdefaults_demo.jpeg)
+![Пример работы с KeyChain](Kursach/images/keychain_demo.jpeg)
 
 ### 2. InsecureAuth
 - **FaceID** - Интеграция биометрической аутентификации
 - **Pincode** - Реализация PIN-кода для аутентификации
 
-![Демонстрация FaceID](images/faceid_demo.jpeg)
-![Демонстрация PIN-кода](images/pincode_demo.jpeg)
+![Демонстрация FaceID](Kursach/images/faceid_demo.PNG)
+![Демонстрация PIN-кода](Kursach/images/pincode_demo.PNG)
 
 ### 3. PoorCode
 - **Race Conditions** - Демонстрация проблем с гонкой условий
 - **NSLock** - Примеры использования блокировок
 - **GCD** - Работа с Grand Central Dispatch
 
-![Пример Race Conditions](images/race_conditions_demo.jpeg)
+![Пример Race Conditions](Kursach/images/race_conditions_demo.PNG)
 
 ### 4. ReverseEngineering
 - **Detecting Jailbreak** - Методы определения джейлбрейка
 
-![Демонстрация определения джейлбрейка](images/jailbreak_demo.jpeg)
+![Демонстрация определения джейлбрейка](Kursach/images/jailbreak_demo.PNG)
 
 ### 5. InsecureCommunication
 - **HTTP** - Примеры небезопасной коммуникации
 - **Certificate Pinning** - Реализация SSL-пиннинга
 
-![Пример HTTP коммуникации](images/http_demo.jpeg)
-![Пример SSL-пиннинга](images/ssl_pinning_demo.jpeg)
+![Пример HTTP коммуникации](Kursach/images/http_demo.PNG)
+![Пример SSL-пиннинга](Kursach/images/ssl_pinning_demo.PNG)
 
 ### 6. Model
 Содержит модели данных, используемые в приложении
