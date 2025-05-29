@@ -1,48 +1,49 @@
 # Курсовой проект по iOS безопасности
 
 ## Описание проекта
-Этот проект представляет собой демонстрационное iOS-приложение, разработанное на SwiftUI, которое исследует различные аспекты безопасности мобильных приложений. Проект служит образовательным целям и демонстрирует как правильные, так и неправильные практики безопасности в iOS-разработке.
+Демонстрационное iOS-приложение на SwiftUI, исследующее аспекты безопасности мобильных приложений. Проект показывает как правильные, так и неправильные практики безопасности.
 
-![Главный экран приложения](Kursach/images/main_screen.jpeg)
+<img src="Kursach/images/main_screen.jpeg" width="300" alt="Главный экран приложения">
 
 ## Структура проекта
-Проект организован в следующие основные модули:
 
 ### 1. InsecureDataStorage
-- **UserDefaults** - Демонстрация небезопасного хранения данных
-- **KeyChain** - Примеры работы с KeyChain для безопасного хранения данных
+- **UserDefaults** - Небезопасное хранение данных
+- **KeyChain** - Безопасное хранение данных
 
-![Пример работы с UserDefaults](Kursach/images/userdefaults_demo.jpeg)
-![Пример работы с KeyChain](Kursach/images/keychain_demo.jpeg)
+<div style="display: flex; gap: 10px;">
+  <img src="Kursach/images/userdefaults_demo.jpeg" width="200" alt="UserDefaults demo">
+  <img src="Kursach/images/keychain_demo.jpeg" width="200" alt="KeyChain demo">
+</div>
 
 ### 2. InsecureAuth
-- **FaceID** - Интеграция биометрической аутентификации
-- **Pincode** - Реализация PIN-кода для аутентификации
+- **FaceID** - Биометрическая аутентификация
+- **Pincode** - Аутентификация по PIN-коду
 
-![Демонстрация FaceID](Kursach/images/faceid_demo.PNG)
-![Демонстрация PIN-кода](Kursach/images/pincode_demo.PNG)
+<div style="display: flex; gap: 10px;">
+  <img src="Kursach/images/faceid_demo.PNG" width="200" alt="FaceID demo">
+  <img src="Kursach/images/pincode_demo.PNG" width="200" alt="Pincode demo">
+</div>
 
 ### 3. PoorCode
-- **Race Conditions** - Демонстрация проблем с гонкой условий
-- **NSLock** - Примеры использования блокировок
-- **GCD** - Работа с Grand Central Dispatch
+- **Race Conditions** - Проблемы гонки условий
+- **NSLock/GCD** - Решения для многопоточности
 
-![Пример Race Conditions](Kursach/images/race_conditions_demo.PNG)
+<img src="Kursach/images/race_conditions_demo.PNG" width="300" alt="Race Conditions demo">
 
 ### 4. ReverseEngineering
-- **Detecting Jailbreak** - Методы определения джейлбрейка
+- **Detecting Jailbreak** - Определение джейлбрейка
 
-![Демонстрация определения джейлбрейка](Kursach/images/jailbreak_demo.PNG)
+<img src="Kursach/images/jailbreak_demo.PNG" width="300" alt="Jailbreak detection">
 
 ### 5. InsecureCommunication
-- **HTTP** - Примеры небезопасной коммуникации
-- **Certificate Pinning** - Реализация SSL-пиннинга
+- **HTTP** - Небезопасная коммуникация
+- **Certificate Pinning** - SSL-пиннинг
 
-![Пример HTTP коммуникации](Kursach/images/http_demo.PNG)
-![Пример SSL-пиннинга](Kursach/images/ssl_pinning_demo.PNG)
-
-### 6. Model
-Содержит модели данных, используемые в приложении
+<div style="display: flex; gap: 10px;">
+  <img src="Kursach/images/http_demo.PNG" width="200" alt="HTTP demo">
+  <img src="Kursach/images/ssl_pinning_demo.PNG" width="200" alt="SSL Pinning demo">
+</div>
 
 ## Технические детали
 - Разработано с использованием SwiftUI
@@ -61,9 +62,3 @@
 2. Откройте `Kursach.xcodeproj` в Xcode
 3. Выберите целевое устройство или симулятор
 4. Нажмите Run (⌘R)
-
-## Использование
-Приложение имеет простой навигационный интерфейс, где каждый раздел демонстрирует определенный аспект безопасности iOS. Выберите интересующий вас раздел из списка для просмотра соответствующих примеров и демонстраций.
-
-## Примечания
-Этот проект создан в образовательных целях и демонстрирует как правильные, так и неправильные практики безопасности. Некоторые примеры намеренно показывают небезопасные реализации для демонстрации потенциальных уязвимостей.
