@@ -46,6 +46,12 @@ struct DetailView: View {
             NSLockView()
         case "GCD":
             GCDView()
+        case "Detecting Jailbreak":
+            JailBreakView()
+        case "HTTP":
+            HTTPView()
+        case "Certificate Pinning":
+            SSLPinningView()
         default:
             Text("Детали для \(title)")
         }

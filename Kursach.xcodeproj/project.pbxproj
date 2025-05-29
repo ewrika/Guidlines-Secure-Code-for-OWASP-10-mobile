@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E8F772042DE7AA66006A9E55 /* IOSSecuritySuite in Frameworks */ = {isa = PBXBuildFile; productRef = E8F772032DE7AA66006A9E55 /* IOSSecuritySuite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E85CFBAC2DBFEAC60078EE97 /* Kursach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kursach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F772042DE7AA66006A9E55 /* IOSSecuritySuite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = Kursach;
 			packageProductDependencies = (
+				E8F772032DE7AA66006A9E55 /* IOSSecuritySuite */,
 			);
 			productName = Kursach;
 			productReference = E85CFBAC2DBFEAC60078EE97 /* Kursach.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = E85CFBA32DBFEAC60078EE97;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E8F772022DE7AA66006A9E55 /* XCRemoteSwiftPackageReference "IOSSecuritySuite" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E85CFBAD2DBFEAC60078EE97 /* Products */;
 			projectDirPath = "";
@@ -341,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8F772022DE7AA66006A9E55 /* XCRemoteSwiftPackageReference "IOSSecuritySuite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/securing/IOSSecuritySuite";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8F772032DE7AA66006A9E55 /* IOSSecuritySuite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8F772022DE7AA66006A9E55 /* XCRemoteSwiftPackageReference "IOSSecuritySuite" */;
+			productName = IOSSecuritySuite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E85CFBA42DBFEAC60078EE97 /* Project object */;
 }
